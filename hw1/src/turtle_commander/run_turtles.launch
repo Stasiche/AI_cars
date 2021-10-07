@@ -1,0 +1,5 @@
+<launch>
+    <node pkg='turtlesim' type='turtlesim_node' name='turtle1' />
+    <!-- <node pkg="rosservice" type="rosservice" name="global_loc" args='call /spawn "{x: 5.0, y: 1.0, theta: 0}"' /> -->
+    <node pkg='rosrun' type='turtle_commander' name='turtle2' args='square.py'/>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/stas/Documents/HSE/Cars/hw1/install
+
+Name: turtle_commander
+Description: Description of turtle_commander
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
