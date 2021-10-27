@@ -1,0 +1,21 @@
+<launch>
+    <node 
+        pkg="rosbag" 
+        type="play" 
+        name="player" 
+        args="<PATH-TO-BAG>"
+    />
+
+    <node
+        pkg='scanner_commander'
+        type='main.py'
+        name='solution'
+    />
+
+    <node
+        type="rviz"
+        pkg="rviz"
+        name="rviz"
+        args="-d <PATH-TO-PROJECT>/hw2/src/config.rviz"
+    />
+</launch>
